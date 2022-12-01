@@ -25,7 +25,7 @@ void *statusStartSelfCB(void *menu, int index) {
 	return (void*)menu;
 }
 
-#define LOG_PATH "ux0:/FrAmGamesDec/log.txt"
+#define LOG_PATH "ux0:/GGDec/log.txt"
 void statusAddLog(MenuType level,const char *text, ...) {
 	char log_buffer[128];
 	va_list args;

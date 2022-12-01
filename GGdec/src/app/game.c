@@ -91,9 +91,10 @@ Menu *gameGenerateMenu() {
 	Menu *menu = MenuCreate(PANE_LEFT);
 	size_t sz = sizeof(GameEntry) * (gameCount() + 6);
 	games = malloc(sz);
-	MenuAddEntry(menu, MENU_TITLE, "FRENCH-AMERICAN GAME DECRYPTER", NULL);
-	MenuAddEntry(menu, MENU_SUBTITLE, "REV ENG BY @CelesteBlue123 (HE IS AMAZING)", NULL);
-	MenuAddEntry(menu, MENU_SUBTITLE, "DEVELOPED BY @dots_tb", NULL);
+	MenuAddEntry(menu, MENU_TITLE, "GENERIC GAME DECRYPTER", NULL);
+	MenuAddEntry(menu, MENU_SUBTITLE, "BROUGHT TO YOU BY MYSTICAXOLOTL/MYSTIK791", NULL);
+	MenuAddEntry(menu, MENU_SUBTITLE, "ORIGINAL TOOL BY @CelesteBlue123 AND @dots_tb", NULL);
+
 	MenuAddEntry(menu, MENU_NORMAL, "Decrypt modules in list", gameStatusCB)->type = MENU_START;
 	MenuAddEntry(menu, MENU_NORMAL, "Further Credits", gameCreditCB)->type = MENU_BACK;
 	MenuAddEntry(menu, MENU_TITLE, "SYSTEM:", NULL);

@@ -337,9 +337,9 @@ int dumpVerifyElf(const char *path,  uint8_t *orig_elf_digest) {
 int dumpThread(unsigned int argc,  void *argv) {
 	char aid[8];
 	int res;
-	statusAddLog(MENU_WARNING, "Starting kuEntente plugin: %x", taiLoadStartKernelModule("ux0:/app/VDEC00001/kentente.skprx", 0, NULL, 0));
+	statusAddLog(MENU_WARNING, "Starting kuEntente plugin: %x", taiLoadStartKernelModule("ux0:/app/GDEC00001/kentente.skprx", 0, NULL, 0));
 	if(uplugin_modid < 0)
-		statusAddLog(MENU_WARNING, "Starting userAllied plugin: %x",  uplugin_modid = sceKernelLoadStartModule("ux0:/app/VDEC00001/userAllied.suprx", 0, NULL, 0, NULL, NULL));
+		statusAddLog(MENU_WARNING, "Starting userAllied plugin: %x",  uplugin_modid = sceKernelLoadStartModule("ux0:/app/GDEC00001/userAllied.suprx", 0, NULL, 0, NULL, NULL));
 	sceKernelDelayThread(175 * 1000);
 	sceIoMkdir(OUT_FOLDER"",6);
 	if(uplugin_modid<0) {

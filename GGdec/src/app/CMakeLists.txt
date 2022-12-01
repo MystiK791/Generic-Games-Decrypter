@@ -8,11 +8,11 @@ if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
   endif()
 endif()
 
-project(FAGDec)
+project(GGDec)
 include("$ENV{VITASDK}/share/vita.cmake" REQUIRED)
 
-set(VITA_APP_NAME "French American Games Decrypter")
-set(VITA_TITLEID  "VDEC00001")
+set(VITA_APP_NAME "Generic Games Decrypter")
+set(VITA_TITLEID  "GDEC00001")
 set(VITA_VERSION  "01.00")
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")

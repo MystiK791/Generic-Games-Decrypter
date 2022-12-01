@@ -13,7 +13,7 @@ void *creditsBackCB(void *menu, int index) {
 Menu *creditGenerateMenu(void *p_menu) {
 	parent_menu = (Menu*)p_menu;
 	Menu *menu  = MenuCreate(PANE_LEFT);
-	MenuAddEntry(menu, MENU_TITLE, "FRENCH-AMERICAN GAME DECRYPTER", NULL);
+	MenuAddEntry(menu, MENU_TITLE, "GENERIC GAMES DECRYPTER", NULL);
 	MenuAddEntry(menu, MENU_SUBTITLE, "THE FREEDOM TO DECRYPT thanks to:", NULL);
 	MenuAddEntry(menu, MENU_NORMAL, "@Celesteblue123", NULL);
 	MenuAddEntry(menu, MENU_SUBTITLE, "Rev Ur Engs and Kplugin work", NULL);
