@@ -1,1 +1,0 @@
-int test_large_inflate(Byte *compr, uLong comprLen, Byte *uncompr, uLong uncomprLen);
